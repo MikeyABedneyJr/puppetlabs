@@ -12,4 +12,4 @@ Internet access (for fetching github repo)
 # Steps required to apply this solution 
 Puppet master pulls this repo
 
-From terminal run "puppet apply <directory of downloaded file>/main.pp"
+From terminal run "puppet apply /DownloadedDirectoryLocation/.../.../main.pp"
