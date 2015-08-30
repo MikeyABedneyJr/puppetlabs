@@ -8,3 +8,8 @@ Serving requests over specific port & delivering content of repo to agents.
 Puppet downloaded/installed on necessary machines (v4.0 or higher).
 
 Internet access (for fetching github repo)
+
+# Steps required to apply this solution 
+Puppet master pulls this repo
+
+From terminal run "puppet apply <directory of downloaded file>/main.pp"
