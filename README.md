@@ -1,2 +1,4 @@
 # puppetlabs
-Playing with puppet lab modules to see what it's all about :-)
+First crack at a Puppetlabs challenge.
+
+Automating installation of nginx and custom config file.
