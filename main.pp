@@ -19,15 +19,18 @@ exec { 'git clone https://github.com/puppetlabs/exercise-webpage':
 service { 'nginx':
   enable => true,
   ensure => running,
+  require => Package['puppetlabs-nginx'],
 }
 
 # Turn off default nginx.conf so later we can implement custom settings
 file { '/etc/nginx/sites-enabled/default':
   ensure => absent,
+
 }
 
 # Deploy custom nginx config to puppet agent(s)
 file { "/etc/nginx/nginx.conf":
   ensure => present,
+  require => Package['puppetlabs-nginx']
   source =>"puppet:///nginx.conf"
 }
