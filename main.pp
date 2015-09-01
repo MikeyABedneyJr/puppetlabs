@@ -25,7 +25,6 @@ service { 'nginx':
 # Turn off default nginx.conf so later we can implement custom settings
 file { '/etc/nginx/sites-enabled/default':
   ensure => absent,
-
 }
 
 # Deploy custom nginx config to puppet agent(s)
