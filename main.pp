@@ -22,7 +22,7 @@ service { 'nginx':
   require => Package['puppetlabs-nginx'],
 }
 
-# Turn off default nginx.conf so later we can implement custom settings
+# Turn off default nginx.conf so we can implement custom settings later
 file { '/etc/nginx/sites-enabled/default':
   ensure => absent,
 }
